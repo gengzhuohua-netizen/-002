@@ -465,6 +465,36 @@ main {
   letter-spacing: 0.04em;
 }
 
+.navActions {
+  justify-self: end;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navLanguage {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 52px;
+  height: 44px;
+  padding: 0 14px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.03);
+  color: #f1f0eb;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  transition: border-color 220ms ease, color 220ms ease, background 220ms ease;
+}
+
+.navLanguage:hover {
+  color: var(--accent);
+  border-color: rgba(240, 78, 78, 0.52);
+  background: rgba(255, 255, 255, 0.06);
+}
+
 .navLinks a:hover,
 .contactRows a:hover,
 .contactPanel a:hover {
@@ -2819,6 +2849,10 @@ main {
     display: none;
   }
 
+  .navActions {
+    gap: 8px;
+  }
+
   .heroIndexTitle {
     top: 12%;
     left: 0;
@@ -2930,6 +2964,42 @@ main {
 }
 
 @media (max-width: 720px) {
+  .nav {
+    top: 10px;
+    width: calc(100% - 20px);
+    min-height: 50px;
+    padding: 0 12px;
+    gap: 10px;
+  }
+
+  .brand {
+    min-width: 0;
+    gap: 8px;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+  }
+
+  .brand span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .navActions {
+    gap: 6px;
+  }
+
+  .navLanguage,
+  .navContact {
+    height: 40px;
+  }
+
+  .navLanguage {
+    min-width: 44px;
+    padding: 0 10px;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+  }
+
   .heroIndexTitle {
     top: 4%;
     font-size: clamp(40px, 12vw, 68px);
@@ -2973,7 +3043,9 @@ main {
     bottom: 4%;
     width: 100%;
     min-width: 0;
-    height: 66px;
+    height: 60px;
+    padding: 0 18px;
+    font-size: 14px;
   }
 
   .heroClaim {
@@ -3008,6 +3080,81 @@ main {
 
   .introText p {
     font-size: 15px;
+  }
+
+  .showcaseHead p,
+  .archiveHeading p,
+  .contactEnd p,
+  .requirementIntro p,
+  .expertiseBody {
+    max-width: 100%;
+  }
+
+  .showcaseRow {
+    gap: 18px;
+  }
+
+  .projectOverviewCard,
+  .contactPanel,
+  .briefForm,
+  .expertiseTitle {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .projectCarouselPanel {
+    gap: 12px;
+  }
+
+  .projectArrow {
+    width: 52px;
+    height: 52px;
+  }
+
+  .projectImageFrame {
+    min-height: 320px;
+  }
+
+  .archiveFilters {
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 6px;
+    scrollbar-width: none;
+  }
+
+  .archiveFilters::-webkit-scrollbar {
+    display: none;
+  }
+
+  .archiveFilterButton {
+    flex: 0 0 auto;
+  }
+
+  .archiveGrid {
+    gap: 16px;
+  }
+
+  .archiveImageWrap {
+    aspect-ratio: 4 / 4.6;
+  }
+
+  .contactCardBody {
+    gap: 16px;
+  }
+
+  .contactQrWrap img {
+    width: min(34vw, 132px);
+    height: min(34vw, 132px);
+  }
+
+  .briefForm {
+    gap: 14px;
+  }
+
+  .briefForm label,
+  .briefForm .wideField,
+  .submitBrief {
+    min-width: 0;
   }
 
   .introMeta {
