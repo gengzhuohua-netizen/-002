@@ -27,6 +27,70 @@ import './styles.css';
 
 gsap.registerPlugin(ScrollTrigger);
 
+const DEFAULT_VIEWPORT = 'width=device-width, initial-scale=1.0, viewport-fit=cover';
+const PHONE_DESKTOP_VIEWPORT = 'width=1440, viewport-fit=cover';
+
+function isPhoneLikeDevice() {
+  if (typeof window === 'undefined') return false;
+
+  const coarsePointer = window.matchMedia('(pointer: coarse)').matches;
+  const narrowScreen = window.matchMedia('(max-width: 767px)').matches;
+  const touchCapable = navigator.maxTouchPoints > 0;
+  const userAgent = navigator.userAgent || '';
+  const phoneAgent = /Android.*Mobile|iPhone|iPod|Windows Phone|Mobile/i.test(userAgent);
+
+  return (phoneAgent || (coarsePointer && narrowScreen)) && touchCapable;
+}
+
+function DeviceViewportManager() {
+  useEffect(() => {
+    const viewportMeta = document.querySelector('meta[name="viewport"]');
+    if (!viewportMeta) return undefined;
+
+    const applyViewport = () => {
+      const isPhone = isPhoneLikeDevice();
+      viewportMeta.setAttribute('content', isPhone ? PHONE_DESKTOP_VIEWPORT : DEFAULT_VIEWPORT);
+      document.documentElement.dataset.device = isPhone ? 'phone' : 'desktop';
+      document.body.dataset.device = isPhone ? 'phone' : 'desktop';
+    };
+
+    applyViewport();
+
+    const mediaQueries = [
+      window.matchMedia('(max-width: 767px)'),
+      window.matchMedia('(pointer: coarse)'),
+    ];
+
+    mediaQueries.forEach((query) => {
+      if (query.addEventListener) {
+        query.addEventListener('change', applyViewport);
+      } else {
+        query.addListener(applyViewport);
+      }
+    });
+
+    window.addEventListener('orientationchange', applyViewport);
+    window.addEventListener('resize', applyViewport);
+
+    return () => {
+      viewportMeta.setAttribute('content', DEFAULT_VIEWPORT);
+      delete document.documentElement.dataset.device;
+      delete document.body.dataset.device;
+      mediaQueries.forEach((query) => {
+        if (query.removeEventListener) {
+          query.removeEventListener('change', applyViewport);
+        } else {
+          query.removeListener(applyViewport);
+        }
+      });
+      window.removeEventListener('orientationchange', applyViewport);
+      window.removeEventListener('resize', applyViewport);
+    };
+  }, []);
+
+  return null;
+}
+
 function AppImage({ eager = false, fetchPriority, decoding = 'async', ...props }) {
   return (
     <img
@@ -510,6 +574,7 @@ function App() {
     const row = archiveMap[activeSlug] || archiveMap.visual;
     return (
       <main className="appRoot">
+        <DeviceViewportManager />
         <SiteNav onNavigate={navigate} />
         <ProjectArchivePage row={row} activeSlug={activeSlug} onBack={() => navigate('/')} onNavigate={navigate} />
       </main>
@@ -518,6 +583,7 @@ function App() {
 
   return (
     <main className="appRoot">
+      <DeviceViewportManager />
       {introDismissed && <SiteNav onNavigate={navigate} />}
       {introDismissed ? (
         <div className="siteCanvas isRevealed">
