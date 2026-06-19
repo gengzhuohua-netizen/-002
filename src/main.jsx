@@ -562,11 +562,11 @@ function SiteNav({ onNavigate }) {
 }
 
 function PrefacePage({ isLeaving, onEnter }) {
-  const typedTitle = '璁╄璁＄編瀛n璐交鎮ㄧ殑鐢熸椿';
+  const title = '让设计美学\n贯彻您的生活';
+  const typedTitle = title;
   const showLead = true;
   const showSupport = true;
   const showCopy = true;
-  const title = '让设计美学\n贯彻您的生活';
 
   return (
     <section className={`prefacePage ${isLeaving ? 'isLeaving' : ''}`} aria-label="前言页">
