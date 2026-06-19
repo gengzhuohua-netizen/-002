@@ -874,7 +874,6 @@ main {
 .contactEnd h2,
 .requirementIntro h2 {
   max-width: 100%;
-  white-space: nowrap;
   font-size: clamp(30px, 2.8vw, 60px);
   letter-spacing: -0.05em;
 }
@@ -2527,20 +2526,25 @@ main {
 
 .contactGrid {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 90px;
+  grid-template-columns: minmax(0, 1.18fr) minmax(430px, 0.82fr);
+  gap: 56px;
   align-items: center;
 }
 
 .contactEnd h2 {
-  max-width: 980px;
+  max-width: 8ch;
+  white-space: normal;
+  text-wrap: balance;
+  font-size: clamp(38px, 3.8vw, 64px);
+  line-height: 1.06;
 }
 
 .contactEnd p {
-  max-width: 720px;
+  max-width: 42ch;
 }
 
 .contactPanel {
+  width: min(100%, 540px);
   padding: 36px;
   min-height: 470px;
   display: flex;
@@ -2549,6 +2553,7 @@ main {
   gap: 18px;
   align-items: flex-start;
   text-align: left;
+  justify-self: end;
 }
 
 .contactPanel span {
@@ -2561,20 +2566,21 @@ main {
 
 .contactPanel h3 {
   margin: 0;
-  font-size: clamp(34px, 3.2vw, 54px);
+  font-size: clamp(30px, 2.6vw, 46px);
   line-height: 0.95;
   font-weight: 800;
   letter-spacing: -0.04em;
-  text-wrap: balance;
+  white-space: nowrap;
 }
 
 .contactRole {
   margin: -8px 0 0;
   color: rgba(244, 241, 234, 0.74);
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.6;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .contactPanel a,
@@ -2602,8 +2608,8 @@ main {
 .contactCardBody {
   width: 100%;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 170px;
-  gap: 28px;
+  grid-template-columns: minmax(0, 1fr) 150px;
+  gap: 20px;
   align-items: start;
   margin: 10px 0 10px;
 }
@@ -2646,16 +2652,20 @@ main {
 }
 
 .contactLines a {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   font-variant-numeric: tabular-nums;
-  word-break: break-word;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .contactLines strong {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
-  word-break: break-word;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .contactQrWrap {
