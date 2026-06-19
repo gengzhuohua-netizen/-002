@@ -2692,26 +2692,28 @@ main {
 
 .requirementGrid {
   display: grid;
-  grid-template-columns: 0.82fr 1.18fr;
-  gap: 72px;
+  grid-template-columns: minmax(0, 0.92fr) minmax(340px, 1.08fr);
+  gap: 56px;
   align-items: start;
 }
 
 .requirementIntro {
   position: sticky;
   top: 120px;
+  min-width: 0;
 }
 
 .requirementIntro h2 {
   margin: 18px 0 0;
-  max-width: 640px;
-  font-size: clamp(48px, 4.7vw, 86px);
-  line-height: 1.02;
+  max-width: 8ch;
+  font-size: clamp(40px, 4vw, 68px);
+  line-height: 1.08;
   font-weight: 500;
+  text-wrap: balance;
 }
 
 .requirementIntro p {
-  max-width: 560px;
+  max-width: 46ch;
   color: var(--muted);
   font-size: 17px;
   line-height: 1.9;
