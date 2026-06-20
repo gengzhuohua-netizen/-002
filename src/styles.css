@@ -2964,9 +2964,18 @@ main {
 }
 
 @media (max-width: 720px) {
+  .container,
+  .nav {
+    width: min(calc(100% - 24px), var(--max));
+  }
+
+  .hero,
+  .heroInner {
+    min-height: 100svh;
+  }
+
   .nav {
     top: 10px;
-    width: calc(100% - 20px);
     min-height: 50px;
     padding: 0 12px;
     gap: 10px;
@@ -3001,9 +3010,11 @@ main {
   }
 
   .heroIndexTitle {
-    top: 4%;
-    font-size: clamp(40px, 12vw, 68px);
-    line-height: 0.92;
+    top: 7%;
+    left: 0;
+    max-width: min(84vw, 340px);
+    font-size: clamp(42px, 11.5vw, 64px);
+    line-height: 0.94;
   }
 
   .heroIndexTitle span {
@@ -3021,7 +3032,9 @@ main {
 
   .heroStat {
     left: 0;
-    bottom: 20%;
+    bottom: 22%;
+    max-width: min(76vw, 286px);
+    padding-right: 8px;
   }
 
   .heroStat > span {
@@ -3030,17 +3043,18 @@ main {
   }
 
   .heroStat strong {
-    font-size: 70px;
+    font-size: 62px;
   }
 
   .heroStat p {
-    max-width: 260px;
-    font-size: 14px;
+    max-width: 100%;
+    font-size: 13px;
+    line-height: 1.65;
   }
 
   .heroStart {
     left: 0;
-    bottom: 4%;
+    bottom: 5%;
     width: 100%;
     min-width: 0;
     height: 60px;
@@ -3050,9 +3064,21 @@ main {
 
   .heroClaim {
     right: 0;
-    bottom: 12%;
-    max-width: 210px;
-    font-size: 24px;
+    bottom: 13%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2px;
+    max-width: 160px;
+    font-size: 18px;
+    line-height: 1.05;
+    text-align: right;
+  }
+
+  .scrollCue {
+    right: 10px;
+    bottom: 22px;
+    font-size: 10px;
+    opacity: 0.58;
   }
 
   .heroActions,
@@ -3060,26 +3086,41 @@ main {
     flex-direction: column;
   }
 
+  .profileCarousel,
+  .introSlide,
+  .introLayout {
+    min-height: 720px;
+  }
+
   .introLayout {
     align-items: end;
-    padding-bottom: 120px;
+    padding-bottom: 112px;
   }
 
   .introText {
     width: 100%;
-    padding-top: 120px;
+    padding-top: 104px;
   }
 
   .introText h2 {
-    font-size: clamp(72px, 24vw, 116px);
+    font-size: clamp(60px, 22vw, 104px);
+    line-height: 0.92;
   }
 
   .introText h3 {
-    font-size: clamp(32px, 11vw, 52px);
+    font-size: clamp(28px, 9vw, 44px);
+    line-height: 1.02;
   }
 
   .introText p {
-    font-size: 15px;
+    max-width: 92%;
+    font-size: 14px;
+    line-height: 1.72;
+  }
+
+  .introText small {
+    max-width: 88%;
+    line-height: 1.5;
   }
 
   .showcaseHead p,
@@ -3091,7 +3132,7 @@ main {
   }
 
   .showcaseRow {
-    gap: 18px;
+    gap: 16px;
   }
 
   .projectOverviewCard,
@@ -3102,17 +3143,97 @@ main {
     padding-right: 18px;
   }
 
+  .projectOverviewCard {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
+  .projectOverviewCard h3 {
+    font-size: 30px;
+    line-height: 0.95;
+  }
+
+  .projectOverviewCard strong {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+
+  .projectOverviewCard p {
+    font-size: 14px;
+    line-height: 1.72;
+  }
+
+  .overviewIcons {
+    gap: 8px;
+  }
+
+  .overviewIcons span {
+    font-size: 11px;
+    line-height: 1.35;
+  }
+
   .projectCarouselPanel {
     gap: 12px;
+    padding: 22px 0 56px;
   }
 
   .projectArrow {
-    width: 52px;
-    height: 52px;
+    top: auto;
+    bottom: 304px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .projectArrow.isLeft {
+    left: 8px;
+  }
+
+  .projectArrow.isRight {
+    right: 8px;
+  }
+
+  .projectDots {
+    gap: 12px;
+    bottom: 14px;
+  }
+
+  .projectDots button {
+    width: 8px;
+    height: 8px;
+  }
+
+  .projectImageTrack {
+    height: 280px;
   }
 
   .projectImageFrame {
-    min-height: 320px;
+    min-height: 280px;
+  }
+
+  .showcaseProject {
+    min-height: 260px;
+  }
+
+  .showcaseCaption {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    padding: 14px 14px 12px;
+  }
+
+  .showcaseCaption h4 {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .showcaseCaption p {
+    font-size: 12px;
+    line-height: 1.55;
+  }
+
+  .showcaseCaption time {
+    grid-column: 1;
+    grid-row: auto;
+    justify-self: start;
   }
 
   .archiveFilters {
@@ -3135,20 +3256,77 @@ main {
   }
 
   .archiveImageWrap {
-    aspect-ratio: 4 / 4.6;
+    aspect-ratio: 4 / 4.4;
+  }
+
+  .archiveCardBody {
+    padding: 14px 14px 16px;
+  }
+
+  .archiveMetaRow {
+    flex-wrap: wrap;
+    gap: 6px 12px;
+  }
+
+  .archiveCardBody h2 {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .archiveCardBody p {
+    font-size: 13px;
+    line-height: 1.65;
   }
 
   .contactCardBody {
-    gap: 16px;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    align-items: flex-start;
   }
 
   .contactQrWrap img {
-    width: min(34vw, 132px);
-    height: min(34vw, 132px);
+    width: min(30vw, 118px);
+    height: min(30vw, 118px);
+  }
+
+  .contactQrWrap {
+    justify-items: start;
+  }
+
+  .contactPanel h3 {
+    font-size: 28px;
+    line-height: 1;
+  }
+
+  .contactRole {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .contactLines {
+    gap: 10px;
+  }
+
+  .contactLines a,
+  .contactLines strong {
+    padding: 30px 0 12px;
+    font-size: 13px;
+    line-height: 1.5;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    word-break: break-word;
+  }
+
+  .contactLines a::before,
+  .contactLines strong::before {
+    top: 10px;
   }
 
   .briefForm {
-    gap: 14px;
+    gap: 12px;
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
 
   .briefForm label,
@@ -3157,16 +3335,53 @@ main {
     min-width: 0;
   }
 
+  .briefForm label span {
+    font-size: 12px;
+    letter-spacing: 0.08em;
+  }
+
+  .briefForm input,
+  .briefForm select,
+  .briefForm textarea {
+    min-height: 54px;
+    font-size: 14px;
+  }
+
+  .briefForm textarea {
+    min-height: 150px;
+  }
+
+  .submitBrief {
+    min-height: 60px;
+    font-size: 14px;
+  }
+
   .introMeta {
-    top: 110px;
-    right: 18px;
+    top: 96px;
+    right: 12px;
+    gap: 2px;
+  }
+
+  .introMeta span {
+    font-size: 42px;
+  }
+
+  .introMeta strong {
+    font-size: 11px;
+    letter-spacing: 0.12em;
   }
 
   .introControls,
   .introSlide.isMirrored .introControls {
     left: 18px;
     right: auto;
-    bottom: 36px;
+    bottom: 28px;
+    gap: 8px;
+  }
+
+  .introControls button {
+    width: 48px;
+    height: 48px;
   }
 
   .introSlide.isCompany .introLayout {
@@ -3175,22 +3390,22 @@ main {
   }
 
   .introSlide.isCompany .introText h2 {
-    right: -16%;
-    bottom: -12%;
-    font-size: clamp(96px, 36vw, 156px);
+    right: -8%;
+    bottom: -6%;
+    font-size: clamp(82px, 31vw, 136px);
   }
 
   .companyPlacementLogo {
     left: 0;
-    top: 24%;
-    width: 250px;
-    height: 130px;
+    top: 22%;
+    width: 220px;
+    height: 116px;
   }
 
   .introSlide.isCompany .introText p {
-    padding: 20px 0 20px 18px;
-    font-size: 13px;
-    line-height: 1.75;
+    padding: 16px 0 18px 16px;
+    font-size: 12px;
+    line-height: 1.7;
   }
 
   .introSlide.isCompany .introText small {
@@ -3234,7 +3449,10 @@ main {
   .contactEnd h2,
   .requirementIntro h2 {
     white-space: normal;
-    font-size: clamp(24px, 8vw, 36px);
+    max-width: 88%;
+    font-size: clamp(24px, 7.2vw, 34px);
+    line-height: 1.02;
+    text-wrap: balance;
   }
 
   .expertiseBody {
@@ -3242,7 +3460,18 @@ main {
     line-height: 1.8;
   }
 
+  .expertiseTitle p,
+  .requirementIntro p,
+  .contactEnd p {
+    font-size: 14px;
+    line-height: 1.72;
+  }
+
   .requirements {
-    padding: 92px 0;
+    padding: 84px 0 92px;
+  }
+
+  .requirementGrid {
+    gap: 20px;
   }
 }
