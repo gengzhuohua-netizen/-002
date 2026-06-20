@@ -102,7 +102,7 @@ function AppImage({ eager = false, fetchPriority, decoding = 'async', ...props }
 }
 
 const contact = {
-  name: '耿卓华',
+  name: '耿茁华',
   title: 'AFD全案设计事务所',
   location: '中国',
   email: '635296715@qq.com',
@@ -180,7 +180,7 @@ const projectRows = [
     icon: PenTool,
     no: '01',
     title: '视觉设计',
-    label: 'VISUAL DESIGN',
+    label: '视觉设计',
     description: '从平面、海报到 Logo、UI 与品牌形象，建立统一的视觉语言。',
     archiveDetail: '聚焦品牌识别、视觉系统与数字表达，形成完整一致的项目呈现。',
     layout: 'overviewLeft',
@@ -204,28 +204,28 @@ const projectRows = [
     icon: Building2,
     no: '02',
     title: '空间设计',
-    label: 'SPATIAL DESIGN',
+    label: '空间设计',
     description: '住宅、餐饮、零售与会所空间，以叙事空间和落地体验为核心。',
     archiveDetail: '围绕生活方式、商业消费与空间叙事展开，覆盖住宅、餐饮、零售与会所环境。',
     layout: 'overviewRight',
     route: '/works?section=space',
     subcategories: [
-      { label: 'Residential Design', icon: Building2 },
-      { label: 'Office / Club / Hotel', icon: Frame },
-      { label: 'Retail Space', icon: SquareStack },
-      { label: 'Landscape Design', icon: Sparkles },
-      { label: 'Livestream Set', icon: MonitorSmartphone },
+      { label: '住宅设计', icon: Building2 },
+      { label: '办公 / 会所 / 酒店', icon: Frame },
+      { label: '零售空间', icon: SquareStack },
+      { label: '景观设计', icon: Sparkles },
+      { label: '直播场景', icon: MonitorSmartphone },
     ],
     projects: [
-      { title: 'Spring Mountain Retail Dining Space', meta: 'Commercial interior / dining space / brand support', year: '2024', visual: 'spaceLight', image: '/assets/spring-mountain-space.webp', gallery: ['/assets/spring-mountain-space.webp'], focal: '50% 48%', focus: ['Commercial Interior', 'Dining Space'] },
-      { title: 'Wuhan Rongchuang No.1 Residence', meta: 'Residential design / floor plan / modern minimal', year: '2023', visual: 'spaceGallery', image: '/assets/wuhan-rongchuang-1.webp', gallery: ['/assets/wuhan-rongchuang-1.webp'], focal: '50% 38%', focus: ['Residential Design'] },
-      { title: 'MOMENT Main Material Exhibition Hall', meta: 'Exhibition interior / narrative space / restrained minimalism', year: '2023', visual: 'spaceRetail', image: '/assets/moment-main-material.webp', gallery: ['/assets/moment-main-material.webp'], focal: '50% 42%', focus: ['Exhibition Space'] },
-      { title: 'Yinyu Chinese Tea Bar in Italy', meta: 'Retail space / tea and dining / modern Chinese tone', year: '2024', visual: 'spaceRetail', image: '/assets/yinyu-italy-tea.jpg', gallery: ['/assets/yinyu-italy-tea.jpg'], focal: '50% 44%', focus: ['Retail Space'] },
-      { title: 'Modern Oriental Residence / Wuhan', meta: '120 sqm / residential interior / oriental modern', year: '2024', visual: 'spaceLight', image: '/assets/wuhan-oriental-home.webp', gallery: ['/assets/wuhan-oriental-home.webp'], focal: '50% 42%', focus: ['Residential Design'] },
-      { title: 'Renji Bakery / Wuhan Fanhai Plaza', meta: 'Retail / bakery space / deconstructive tone', year: '2024', visual: 'spaceGallery', image: '/assets/kq-fanhai-bakery.jpg', gallery: ['/assets/kq-fanhai-bakery.jpg'], focal: '50% 42%', focus: ['Retail Space'] },
-      { title: 'The Boots Restaurant / Wuhan', meta: 'Dining interior / commercial architecture / leisure', year: '2024', visual: 'spaceLight', image: '/assets/the-boots-wuhan.webp', gallery: ['/assets/the-boots-wuhan.webp'], focal: '50% 42%', focus: ['Dining Space'] },
-      { title: 'Modern Italian Residence / Wuhan Tianchen', meta: '148 sqm / residence / modern Italian style', year: '2023', visual: 'spaceRetail', image: '/assets/huarun-tianchen-italian.webp', gallery: ['/assets/huarun-tianchen-italian.webp'], focal: '50% 42%', focus: ['Residential Design'] },
-      { title: 'Nanshan Club / Contemporary Business Space', meta: 'Club interior / business reception / contemporary restraint', year: '2023', visual: 'spaceGallery', image: '/assets/studio-bw.webp', gallery: ['/assets/studio-bw.webp'], focal: '50% 40%', focus: ['Club Space'] },
+      { title: '春山时新零售餐饮空间', meta: '商业室内 / 餐饮空间 / 品牌延展', year: '2024', visual: 'spaceLight', image: '/assets/spring-mountain-space.webp', gallery: ['/assets/spring-mountain-space.webp'], focal: '50% 48%', focus: ['商业室内', '餐饮空间'] },
+      { title: '武汉融创一号院住宅', meta: '住宅设计 / 户型规划 / 现代极简', year: '2023', visual: 'spaceGallery', image: '/assets/wuhan-rongchuang-1.webp', gallery: ['/assets/wuhan-rongchuang-1.webp'], focal: '50% 38%', focus: ['住宅设计'] },
+      { title: 'MOMENT 主材展厅', meta: '展厅空间 / 叙事动线 / 克制极简', year: '2023', visual: 'spaceRetail', image: '/assets/moment-main-material.webp', gallery: ['/assets/moment-main-material.webp'], focal: '50% 42%', focus: ['展陈空间'] },
+      { title: '意大利银玉新中式茶吧', meta: '零售空间 / 茶饮餐吧 / 现代东方', year: '2024', visual: 'spaceRetail', image: '/assets/yinyu-italy-tea.jpg', gallery: ['/assets/yinyu-italy-tea.jpg'], focal: '50% 44%', focus: ['零售空间'] },
+      { title: '武汉现代东方住宅', meta: '120 平 / 住宅室内 / 东方现代', year: '2024', visual: 'spaceLight', image: '/assets/wuhan-oriental-home.webp', gallery: ['/assets/wuhan-oriental-home.webp'], focal: '50% 42%', focus: ['住宅设计'] },
+      { title: '华润天宸现代意式住宅', meta: '148 平 / 住宅空间 / 现代意式', year: '2023', visual: 'spaceRetail', image: '/assets/huarun-tianchen-italian.webp', gallery: ['/assets/huarun-tianchen-italian.webp'], focal: '50% 42%', focus: ['住宅设计'] },
+      { title: 'The Boots 餐厅 / 武汉', meta: '餐饮室内 / 商业建筑 / 休闲体验', year: '2024', visual: 'spaceLight', image: '/assets/the-boots-wuhan.webp', gallery: ['/assets/the-boots-wuhan.webp'], focal: '50% 42%', focus: ['餐饮空间'] },
+      { title: '仁记面包 / 武汉泛海广场', meta: '零售 / 烘焙空间 / 解构调性', year: '2024', visual: 'spaceGallery', image: '/assets/kq-fanhai-bakery.jpg', gallery: ['/assets/kq-fanhai-bakery.jpg'], focal: '50% 42%', focus: ['零售空间'] },
+      { title: '南山会所 / 当代商务空间', meta: '会所空间 / 商务接待 / 当代克制', year: '2023', visual: 'spaceGallery', image: '/assets/studio-bw.webp', gallery: ['/assets/studio-bw.webp'], focal: '50% 40%', focus: ['会所空间'] },
     ],
   },
   {
@@ -233,22 +233,22 @@ const projectRows = [
     icon: MonitorSmartphone,
     no: '03',
     title: '网页 / App 搭建',
-    label: 'WEB & APP BUILD',
+    label: '网页 / App 搭建',
     description: '从品牌官网到后台系统，兼顾体验、转化与信息层级。',
     archiveDetail: '覆盖品牌站、企业官网、应用与小程序，整合信息架构与视觉表达。',
     layout: 'overviewLeft',
     route: '/works?section=web',
     subcategories: [
-      { label: 'Web / App Build', icon: MonitorSmartphone },
-      { label: 'Web Development', icon: Cpu },
-      { label: 'App Design', icon: Contact },
-      { label: 'Back-Office System', icon: SquareStack },
-      { label: 'UI Design', icon: Layers3 },
+      { label: '网页 / App 搭建', icon: MonitorSmartphone },
+      { label: '网页开发', icon: Cpu },
+      { label: 'App 设计', icon: Contact },
+      { label: '后台系统', icon: SquareStack },
+      { label: 'UI 设计', icon: Layers3 },
     ],
     projects: [
-      { title: 'Linyeji LINKING Mall App and Admin System', meta: 'Commerce system / data visualization / permissions', year: '2024', visual: 'webDashboard', image: '/assets/linyeji-app-dashboard.webp', gallery: ['/assets/linyeji-app-dashboard.webp', '/assets/linyeji-linking.webp'], focal: '50% 24%', focus: ['Commerce System'] },
-      { title: 'Spring Mountain Website Design and Development', meta: 'Brand website / responsive design / interaction', year: '2024', visual: 'webMobile', image: '/assets/spring-mountain-ui.webp', gallery: ['/assets/spring-mountain-ui.webp', '/assets/enterprise-homepage-dev.webp'], focal: '50% 36%', focus: ['Brand Website'] },
-      { title: 'Corporate Website Design and Development', meta: 'Corporate website / business interaction / marketing conversion', year: '2023', visual: 'webLanding', image: '/assets/enterprise-homepage-dev.webp', gallery: ['/assets/enterprise-homepage-dev.webp'], focal: '52% 42%', focus: ['Corporate Website'] },
+      { title: '林野集 LINKING 商城 App 与管理后台', meta: '商城系统 / 数据可视化 / 权限管理', year: '2024', visual: 'webDashboard', image: '/assets/linyeji-app-dashboard.webp', gallery: ['/assets/linyeji-app-dashboard.webp', '/assets/linyeji-linking.webp'], focal: '50% 24%', focus: ['商城系统'] },
+      { title: '春山时官网设计与开发', meta: '品牌官网 / 响应式设计 / 交互体验', year: '2024', visual: 'webMobile', image: '/assets/spring-mountain-ui.webp', gallery: ['/assets/spring-mountain-ui.webp', '/assets/enterprise-homepage-dev.webp'], focal: '50% 36%', focus: ['品牌官网'] },
+      { title: '企业官网设计与开发', meta: '企业官网 / 商务交互 / 转化导向', year: '2023', visual: 'webLanding', image: '/assets/enterprise-homepage-dev.webp', gallery: ['/assets/enterprise-homepage-dev.webp'], focal: '52% 42%', focus: ['企业官网'] },
     ],
   },
   {
@@ -256,7 +256,7 @@ const projectRows = [
     icon: Bot,
     no: '04',
     title: 'AI 智能体搭建',
-    label: 'AI AGENT BUILD',
+    label: 'AI 智能体搭建',
     description: '从客服、流程到知识管理，构建真正可运行的智能系统。',
     archiveDetail: '围绕 AI 客服、流程自动化与知识管理，形成可落地、可复用的解决方案。',
     layout: 'overviewRight',
@@ -269,9 +269,9 @@ const projectRows = [
       { label: 'AI Web / App', icon: MonitorSmartphone },
     ],
     projects: [
-      { title: 'AI Customer Service Agent', meta: 'Customer inquiry / automated response / recommendation', year: '2024', visual: 'aiFlow', image: '/assets/nexa-ai-agent.webp', gallery: ['/assets/nexa-ai-agent.webp'], focal: '50% 20%', focus: ['AI Customer Service'] },
-      { title: 'Business Workflow Automation Agent', meta: 'Process archive / content distribution / publishing', year: '2024', visual: 'aiWorkflow', image: '/assets/ai-workflow-panel.webp', gallery: ['/assets/ai-workflow-panel.webp'], focal: '50% 26%', focus: ['Workflow Automation', 'Content Distribution'] },
-      { title: 'KM Agent', meta: 'Skill management / workflow archive / knowledge graph', year: '2023', visual: 'aiKnowledge', image: '/assets/km-agent.webp', gallery: ['/assets/km-agent.webp'], focal: '50% 36%', focus: ['Knowledge Management', 'Skill'] },
+      { title: 'AI 客服智能体', meta: '客户咨询 / 自动回复 / 推荐支持', year: '2024', visual: 'aiFlow', image: '/assets/nexa-ai-agent.webp', gallery: ['/assets/nexa-ai-agent.webp'], focal: '50% 20%', focus: ['AI 客服'] },
+      { title: '业务流程自动化智能体', meta: '流程归档 / 内容分发 / 发布协同', year: '2024', visual: 'aiWorkflow', image: '/assets/ai-workflow-panel.webp', gallery: ['/assets/ai-workflow-panel.webp'], focal: '50% 26%', focus: ['流程自动化', '内容分发'] },
+      { title: 'KM 智能体', meta: '技能管理 / 流程归档 / 知识图谱', year: '2023', visual: 'aiKnowledge', image: '/assets/km-agent.webp', gallery: ['/assets/km-agent.webp'], focal: '50% 36%', focus: ['知识管理', '技能'] },
     ],
   },
 ];
@@ -290,7 +290,7 @@ const strengths = [
 const introSlides = [
   {
     kind: 'company',
-    kicker: 'COMPANY INTRODUCTION',
+    kicker: '公司介绍',
     title: 'AFD',
     headline: '公司介绍',
     bodyParts: [
@@ -300,16 +300,16 @@ const introSlides = [
       { text: '团队拥有环境空间、平面设计、数字媒体、AI 设计与软件创意方向的实际交付经验。', accent: false },
       { text: '始终强调实用性、适配性、专业度与真实落地。', accent: true },
     ],
-    meta: 'SPACE / VISUAL / AI DIGITAL DESIGN',
+    meta: '空间 / 视觉 / AI 数字设计',
     image: '/assets/studio-bw.webp',
   },
   {
     kind: 'designer',
-    kicker: 'DESIGNER PROFILE',
-    title: '耿卓华',
+    kicker: '设计师简介',
+    title: '耿茁华',
     headline: '跨学科设计经验',
     body: '拥有多年空间与品牌设计经验，实践覆盖品牌 VI、平面传播、电商视觉、新媒体设计、包装、商业空间、住宅设计、网站、应用与 AI 系统。',
-    meta: 'STRATEGY / SYSTEM / DELIVERY',
+    meta: '策略 / 系统 / 交付',
     image: '/assets/designer-geng-final.webp',
   },
 ];
@@ -323,8 +323,8 @@ const UI_COPY = {
       { href: '#strengths', label: '核心优势' },
       { href: '#contact', label: '联系方式' },
     ],
-    languageButton: 'EN',
-    languageAria: '切换到英文',
+    languageButton: '中文',
+    languageAria: '当前为中文',
     homeAria: '返回首页',
     prefaceTitle: '让设计美学\n贯穿你的生活',
     prefaceKicker: 'AFD全案设计事务所',
@@ -527,7 +527,7 @@ const INTRO_SLIDES_EN = [
   },
   {
     kind: 'designer',
-    kicker: 'DESIGNER PROFILE',
+    kicker: '设计师简介',
     title: 'Geng Zhuohua',
     headline: 'Cross-Disciplinary Design Experience',
     body: 'With 5 years of spatial design and 3 years of full-service brand design experience, Geng Zhuohua is among the early builders of AI agents. The practice spans brand VI, campaign graphics, e-commerce visuals, social media design, packaging, commercial interiors, residential design, websites, apps, AICG, AI agents, and custom Skills.',
@@ -676,14 +676,14 @@ const PROJECT_ROWS_EN = [
 
 function getLocalizedPortfolio(language) {
   return {
-    ui: UI_COPY[language],
-    contact: language === 'en' ? CONTACT_EN : contact,
-    categories: language === 'en' ? CATEGORIES_EN : categories,
-    expertiseStats: language === 'en' ? EXPERTISE_STATS_EN : expertiseStats,
-    featuredProjects: language === 'en' ? FEATURED_PROJECTS_EN : featuredProjects,
-    strengths: language === 'en' ? STRENGTHS_EN : strengths,
-    introSlides: language === 'en' ? INTRO_SLIDES_EN : introSlides,
-    projectRows: language === 'en' ? PROJECT_ROWS_EN : projectRows,
+    ui: UI_COPY.zh,
+    contact,
+    categories,
+    expertiseStats,
+    featuredProjects,
+    strengths,
+    introSlides,
+    projectRows,
   };
 }
 
@@ -702,8 +702,8 @@ function App() {
   }, []);
 
   useEffect(() => {
-    document.documentElement.lang = language === 'en' ? 'en' : 'zh-CN';
-  }, [language]);
+    document.documentElement.lang = 'zh-CN';
+  }, []);
 
   useEffect(() => {
     const isArchiveRoute = pathname.startsWith('/works');
@@ -800,7 +800,7 @@ function SiteNav({ onNavigate, language, setLanguage, ui }) {
           className="navLanguage"
           type="button"
           aria-label={ui.languageAria}
-          onClick={() => setLanguage(language === 'en' ? 'zh' : 'en')}
+          onClick={() => setLanguage('zh')}
         >
           {ui.languageButton}
         </button>
@@ -868,7 +868,7 @@ function PrefacePage({ isLeaving, onEnter, ui }) {
             <span className={`prefaceCaret ${typedTitle.length < title.length ? 'isActive' : ''}`} />
           </span>
         </button>
-        <div className={`prefaceLine ${showLead ? 'isVisible' : ''}`}>AFD DESIGN</div>
+        <div className={`prefaceLine ${showLead ? 'isVisible' : ''}`}>AFD 全案设计</div>
         <div className={`prefaceCopy ${showSupport ? 'isVisible' : ''}`}>{ui.prefaceCopy}</div>
         <div className={`prefaceCopy isSub ${showCopy ? 'isVisible' : ''}`}>{ui.prefaceSub}</div>
       </div>
@@ -894,11 +894,11 @@ function Hero({ ui }) {
           {ui.heroStart} <ArrowUpRight size={20} />
         </a>
         <div className="heroClaim">
-          <b>DESIGN</b>
-          <span>IS NOT DECORATION</span>
+          <b>设计</b>
+          <span>不止于装饰</span>
         </div>
       </div>
-      <div className="scrollCue">SCROLL</div>
+      <div className="scrollCue">滚动浏览</div>
     </section>
   );
 }
@@ -1056,7 +1056,7 @@ function ExpertiseSpotlight({ stats, ui }) {
           </BorderGlow>
 
           <div className="expertiseTitle">
-            <div className="sectionLabel">FULL-SERVICE DESIGNER</div>
+            <div className="sectionLabel">全案设计师</div>
             <h2>{ui.expertiseTitle}</h2>
             <p className="expertiseLead">{ui.expertiseLead}</p>
             <p className="expertiseBody">{ui.expertiseBody}</p>
@@ -1105,10 +1105,10 @@ function Projects() {
       <div className="container">
         <div className="sectionHead">
           <div>
-            <div className="sectionLabel">SELECTED WORKS</div>
-            <h2>Selected Projects</h2>
+            <div className="sectionLabel">精选项目</div>
+            <h2>精选项目</h2>
           </div>
-          <p>Selected projects across branding, spatial design, AI systems, and digital products.</p>
+          <p>涵盖品牌、空间、AI 系统与数字产品的代表性项目。</p>
         </div>
 
         <div className="categoryGrid">
@@ -1183,7 +1183,7 @@ function ProjectShowcase({ rows, ui, onNavigate }) {
       <div className="container">
         <div className="showcaseHead">
           <div>
-            <span>SELECTED WORKS</span>
+            <span>精选项目</span>
             <h2>{ui.showcaseTitle}</h2>
           </div>
           <p>{ui.showcaseDesc}</p>
@@ -1228,7 +1228,7 @@ function ProjectShowcaseRow({ row, onNavigate, ui }) {
           <strong>{row.label}</strong>
         </div>
         <p>{row.description}</p>
-        <div className="overviewIcons" aria-label={`${row.title} category`}>
+        <div className="overviewIcons" aria-label={`${row.title} 分类`}>
           {row.subcategories.map(({ label, icon: Icon }) => (
             <span key={label} title={label}>
               <Icon size={16} />
@@ -1326,7 +1326,7 @@ function ProjectShowcaseRow({ row, onNavigate, ui }) {
         >
           <ChevronRight size={24} />
         </BorderGlow>
-        <div className="projectDots" aria-label={`${row.title} pagination`}>
+        <div className="projectDots" aria-label={`${row.title} 分页`}>
           {row.projects.map((project, index) => (
             <button
               type="button"
@@ -1606,7 +1606,7 @@ function Strengths({ strengths, ui }) {
       <div className="container">
         <div className="sectionHead">
           <div>
-            <div className="sectionLabel">CAPABILITY</div>
+            <div className="sectionLabel">核心优势</div>
             <h2>{ui.strengthsTitle}</h2>
           </div>
           <p>{ui.strengthsDesc}</p>
@@ -1651,7 +1651,7 @@ function ContactSection({ contact, ui }) {
     <section className="contactEnd" id="contact" ref={sectionRef}>
       <div className="container contactGrid">
         <div>
-          <div className="sectionLabel">CONTACT</div>
+          <div className="sectionLabel">联系</div>
           <h2>{ui.contactHeading}</h2>
           <p>{ui.contactDesc}</p>
         </div>
@@ -1712,7 +1712,7 @@ function RequirementForm({ categories, ui }) {
     <section className="requirements" id="requirements" ref={sectionRef}>
       <div className="container requirementGrid">
         <div className="requirementIntro">
-          <div className="sectionLabel">PROJECT BRIEF</div>
+          <div className="sectionLabel">项目需求</div>
           <h2>{ui.requirementHeading}</h2>
           <p>{ui.requirementDesc}</p>
         </div>
