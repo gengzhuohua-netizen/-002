@@ -382,7 +382,10 @@ const UI_COPY = {
     close: 'Close',
     previousImage: 'Previous image',
     nextImage: 'Next image',
-  },const CONTACT_EN = {
+  },
+};
+
+const CONTACT_EN = {
   name: 'Geng Zhuohua',
   title: 'AFD Design Studio',
   location: 'China',
