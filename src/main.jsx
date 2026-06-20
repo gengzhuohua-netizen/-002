@@ -1546,7 +1546,8 @@ function ProjectLightbox({ project, imageIndex, onClose, onPrev, onNext, ui }) {
           animated={false}
           colors={['#f04e4e', '#f4f1ea', '#8f8581']}
         >
-          鑴?        </BorderGlow>
+          ×
+        </BorderGlow>
         <BorderGlow
           className="lightboxArrow isLeft"
           as="button"
