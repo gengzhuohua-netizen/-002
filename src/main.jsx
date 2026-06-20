@@ -469,7 +469,7 @@ const FEATURED_PROJECTS_EN = [
   },
   {
     type: 'UI',
-    title: 'Yubao 璺?Yinyu Full-Service Design',
+    title: 'Yubao 鐠?Yinyu Full-Service Design',
     desc: 'Full-service planning / VI design / graphic visual system.',
     tags: ['Full-Service Design', 'VI', 'Graphic'],
     tone: 'green',
@@ -497,7 +497,7 @@ const STRENGTHS_EN = [
   {
     icon: MonitorSmartphone,
     title: 'Long-Term Brand Co-Creation',
-    text: 'Not a one-off output, but a design relationship embedded into the brand閳ユ獨 long-term growth and operation.',
+    text: 'Not a one-off output, but a design relationship embedded into the brand闁炽儲鐛?long-term growth and operation.',
   },
   {
     icon: Cpu,
@@ -588,7 +588,7 @@ const PROJECT_ROWS_EN = [
         focus: ['Full-Service Design', 'VI'],
       },
       {
-        title: 'Yubao 璺?Yinyu Full-Service Design',
+        title: 'Yubao 鐠?Yinyu Full-Service Design',
         meta: 'Full-service design / VI design / graphic visuals',
         year: '2024',
         visual: 'visualBrand',
@@ -621,11 +621,11 @@ const PROJECT_ROWS_EN = [
       { title: 'Wuhan Rongchuang No.1 Residence', meta: 'Residential design / flat layout / modern minimal style', year: '2023', visual: 'spaceGallery', image: '/assets/wuhan-rongchuang-1.webp', gallery: ['/assets/wuhan-rongchuang-1.webp'], focal: '50% 38%', focus: ['Residential Design'] },
       { title: 'MOMENT Main Material Exhibition Hall', meta: 'Exhibition interior / narrative space / restrained minimalism', year: '2023', visual: 'spaceRetail', image: '/assets/moment-main-material.webp', gallery: ['/assets/moment-main-material.webp'], focal: '50% 42%', focus: ['Exhibition Space'] },
       { title: 'Yinyu Chinese Tea Bar in Italy', meta: 'New retail space / tea and dining / new Chinese aesthetics', year: '2024', visual: 'spaceRetail', image: '/assets/yinyu-italy-tea.jpg', gallery: ['/assets/yinyu-italy-tea.jpg'], focal: '50% 44%', focus: ['New Retail Space'] },
-      { title: 'Modern Oriental Residence 璺?Wuhan', meta: '120 sqm / residential interior / oriental modern aesthetic', year: '2024', visual: 'spaceLight', image: '/assets/wuhan-oriental-home.webp', gallery: ['/assets/wuhan-oriental-home.webp'], focal: '50% 42%', focus: ['Residential Design'] },
-      { title: 'Renji Bakery 璺?Wuhan Fanhai Plaza', meta: 'New retail / bakery commercial space / deconstructivist mood', year: '2024', visual: 'spaceGallery', image: '/assets/kq-fanhai-bakery.jpg', gallery: ['/assets/kq-fanhai-bakery.jpg'], focal: '50% 42%', focus: ['Commercial Retail'] },
-      { title: 'The Boots Restaurant 璺?Wuhan', meta: 'Dining interior / commercial architecture / leisure experience', year: '2024', visual: 'spaceLight', image: '/assets/the-boots-wuhan.webp', gallery: ['/assets/the-boots-wuhan.webp'], focal: '50% 42%', focus: ['Dining Space'] },
-      { title: 'Modern Italian Residence 璺?Wuhan Tianchen', meta: '148 sqm / flat residence / modern Italian style', year: '2023', visual: 'spaceRetail', image: '/assets/huarun-tianchen-italian.webp', gallery: ['/assets/huarun-tianchen-italian.webp'], focal: '50% 42%', focus: ['Residential Design'] },
-      { title: 'Nanshan Club 璺?Contemporary Business Space', meta: 'Club interior / business reception / contemporary restraint', year: '2023', visual: 'spaceGallery', image: '/assets/studio-bw.webp', gallery: ['/assets/studio-bw.webp'], focal: '50% 40%', focus: ['Club Space'] },
+      { title: 'Modern Oriental Residence 鐠?Wuhan', meta: '120 sqm / residential interior / oriental modern aesthetic', year: '2024', visual: 'spaceLight', image: '/assets/wuhan-oriental-home.webp', gallery: ['/assets/wuhan-oriental-home.webp'], focal: '50% 42%', focus: ['Residential Design'] },
+      { title: 'Renji Bakery 鐠?Wuhan Fanhai Plaza', meta: 'New retail / bakery commercial space / deconstructivist mood', year: '2024', visual: 'spaceGallery', image: '/assets/kq-fanhai-bakery.jpg', gallery: ['/assets/kq-fanhai-bakery.jpg'], focal: '50% 42%', focus: ['Commercial Retail'] },
+      { title: 'The Boots Restaurant 鐠?Wuhan', meta: 'Dining interior / commercial architecture / leisure experience', year: '2024', visual: 'spaceLight', image: '/assets/the-boots-wuhan.webp', gallery: ['/assets/the-boots-wuhan.webp'], focal: '50% 42%', focus: ['Dining Space'] },
+      { title: 'Modern Italian Residence 鐠?Wuhan Tianchen', meta: '148 sqm / flat residence / modern Italian style', year: '2023', visual: 'spaceRetail', image: '/assets/huarun-tianchen-italian.webp', gallery: ['/assets/huarun-tianchen-italian.webp'], focal: '50% 42%', focus: ['Residential Design'] },
+      { title: 'Nanshan Club 鐠?Contemporary Business Space', meta: 'Club interior / business reception / contemporary restraint', year: '2023', visual: 'spaceGallery', image: '/assets/studio-bw.webp', gallery: ['/assets/studio-bw.webp'], focal: '50% 40%', focus: ['Club Space'] },
     ],
   },
   {
@@ -1109,9 +1109,9 @@ function Projects() {
         <div className="sectionHead">
           <div>
             <div className="sectionLabel">SELECTED WORKS</div>
-            <h2>缁箖鈧銆嶉惄?/h2>
+            <h2>Selected Projects</h2>
           </div>
-          <p>閸ュ绮崫浣哄閵嗕胶鈹栭梻娣偓涓処 娑撳孩鏆熺€涙ぞ楠囬崫浣烘畱缂佺厧鎮庢い鍦窗鐏炴洜銇氶妴?/p>
+          <p>Selected projects across branding, spatial design, AI systems, and digital products.</p>
         </div>
 
         <div className="categoryGrid">
@@ -1549,8 +1549,7 @@ function ProjectLightbox({ project, imageIndex, onClose, onPrev, onNext, ui }) {
           animated={false}
           colors={['#f04e4e', '#f4f1ea', '#8f8581']}
         >
-          脳
-        </BorderGlow>
+          鑴?        </BorderGlow>
         <BorderGlow
           className="lightboxArrow isLeft"
           as="button"
