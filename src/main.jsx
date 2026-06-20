@@ -165,7 +165,7 @@ const featuredProjects = [
   },
   {
     type: 'UI',
-    title: '玉宝 / 银玉 全案设计',
+    title: '玉爻 / 银玉 全案设计',
     desc: '全案设计、VI 与平面视觉系统。',
     tags: ['全案设计', 'VI', '平面'],
     tone: 'green',
@@ -196,7 +196,7 @@ const projectRows = [
       { title: 'XENITH 品牌视觉系统', meta: '品牌设计 / 视觉识别 / 延展系统', year: '2024', visual: 'visualBrand', image: '/assets/xenith-brand.webp', gallery: ['/assets/xenith-brand.webp', '/assets/xenith-keyboard.jpg'], focal: '50% 42%', focus: ['品牌设计', 'VI'] },
       { title: '春山时 餐饮品牌设计', meta: '品牌设计 / 餐饮视觉 / 包装系统', year: '2024', visual: 'visualUi', image: '/assets/spring-mountain-visual.webp', gallery: ['/assets/spring-mountain-visual.webp', '/assets/spring-mountain-space.webp'], focal: '50% 44%', focus: ['餐饮品牌', '包装'] },
       { title: '林野集 LINKING 全案设计', meta: '全案设计 / VI / 平面视觉', year: '2023', visual: 'visualObject', image: '/assets/linyeji-linking.webp', gallery: ['/assets/linyeji-linking.webp', '/assets/linyeji-app-dashboard.webp'], focal: '50% 40%', focus: ['全案设计', 'VI'] },
-      { title: '玉宝 / 银玉 全案设计', meta: '全案设计 / VI / 平面视觉', year: '2024', visual: 'visualBrand', image: '/assets/yuyao-silverjade.webp', gallery: ['/assets/yuyao-silverjade.webp'], focal: '50% 42%', focus: ['全案设计', 'VI'] },
+      { title: '玉爻 / 银玉 全案设计', meta: '全案设计 / VI / 平面视觉', year: '2024', visual: 'visualBrand', image: '/assets/yuyao-silverjade.webp', gallery: ['/assets/yuyao-silverjade.webp'], focal: '50% 42%', focus: ['全案设计', 'VI'] },
     ],
   },
   {
@@ -224,7 +224,7 @@ const projectRows = [
       { title: '武汉现代东方住宅', meta: '120 平 / 住宅室内 / 东方现代', year: '2024', visual: 'spaceLight', image: '/assets/wuhan-oriental-home.webp', gallery: ['/assets/wuhan-oriental-home.webp'], focal: '50% 42%', focus: ['住宅设计'] },
       { title: '华润天宸现代意式住宅', meta: '148 平 / 住宅空间 / 现代意式', year: '2023', visual: 'spaceRetail', image: '/assets/huarun-tianchen-italian.webp', gallery: ['/assets/huarun-tianchen-italian.webp'], focal: '50% 42%', focus: ['住宅设计'] },
       { title: 'The Boots 餐厅 / 武汉', meta: '餐饮室内 / 商业建筑 / 休闲体验', year: '2024', visual: 'spaceLight', image: '/assets/the-boots-wuhan.webp', gallery: ['/assets/the-boots-wuhan.webp'], focal: '50% 42%', focus: ['餐饮空间'] },
-      { title: '仁记面包 / 武汉泛海广场', meta: '零售 / 烘焙空间 / 解构调性', year: '2024', visual: 'spaceGallery', image: '/assets/kq-fanhai-bakery.jpg', gallery: ['/assets/kq-fanhai-bakery.jpg'], focal: '50% 42%', focus: ['零售空间'] },
+      { title: '仟吉KENGGE / 武汉泛海城市广场', meta: '零售 / 烘焙空间 / 解构调性', year: '2024', visual: 'spaceGallery', image: '/assets/kq-fanhai-bakery.jpg', gallery: ['/assets/kq-fanhai-bakery.jpg'], focal: '50% 42%', focus: ['零售空间'] },
       { title: '南山会所 / 当代商务空间', meta: '会所空间 / 商务接待 / 当代克制', year: '2023', visual: 'spaceGallery', image: '/assets/studio-bw.webp', gallery: ['/assets/studio-bw.webp'], focal: '50% 40%', focus: ['会所空间'] },
     ],
   },
@@ -467,7 +467,7 @@ const FEATURED_PROJECTS_EN = [
   },
   {
     type: 'UI',
-    title: 'Yubao 鐠?Yinyu Full-Service Design',
+    title: 'Yuyao / Yinyu Full-Service Design',
     desc: 'Full-service planning / VI design / graphic visual system.',
     tags: ['Full-Service Design', 'VI', 'Graphic'],
     tone: 'green',
@@ -586,7 +586,7 @@ const PROJECT_ROWS_EN = [
         focus: ['Full-Service Design', 'VI'],
       },
       {
-        title: 'Yubao 鐠?Yinyu Full-Service Design',
+        title: 'Yuyao / Yinyu Full-Service Design',
         meta: 'Full-service design / VI design / graphic visuals',
         year: '2024',
         visual: 'visualBrand',
@@ -620,7 +620,7 @@ const PROJECT_ROWS_EN = [
       { title: 'MOMENT Main Material Exhibition Hall', meta: 'Exhibition interior / narrative space / restrained minimalism', year: '2023', visual: 'spaceRetail', image: '/assets/moment-main-material.webp', gallery: ['/assets/moment-main-material.webp'], focal: '50% 42%', focus: ['Exhibition Space'] },
       { title: 'Yinyu Chinese Tea Bar in Italy', meta: 'New retail space / tea and dining / new Chinese aesthetics', year: '2024', visual: 'spaceRetail', image: '/assets/yinyu-italy-tea.jpg', gallery: ['/assets/yinyu-italy-tea.jpg'], focal: '50% 44%', focus: ['New Retail Space'] },
       { title: 'Modern Oriental Residence 鐠?Wuhan', meta: '120 sqm / residential interior / oriental modern aesthetic', year: '2024', visual: 'spaceLight', image: '/assets/wuhan-oriental-home.webp', gallery: ['/assets/wuhan-oriental-home.webp'], focal: '50% 42%', focus: ['Residential Design'] },
-      { title: 'Renji Bakery 鐠?Wuhan Fanhai Plaza', meta: 'New retail / bakery commercial space / deconstructivist mood', year: '2024', visual: 'spaceGallery', image: '/assets/kq-fanhai-bakery.jpg', gallery: ['/assets/kq-fanhai-bakery.jpg'], focal: '50% 42%', focus: ['Commercial Retail'] },
+      { title: 'KENGGE / Wuhan Fanhai City Plaza', meta: 'New retail / bakery commercial space / deconstructivist mood', year: '2024', visual: 'spaceGallery', image: '/assets/kq-fanhai-bakery.jpg', gallery: ['/assets/kq-fanhai-bakery.jpg'], focal: '50% 42%', focus: ['Commercial Retail'] },
       { title: 'The Boots Restaurant 鐠?Wuhan', meta: 'Dining interior / commercial architecture / leisure experience', year: '2024', visual: 'spaceLight', image: '/assets/the-boots-wuhan.webp', gallery: ['/assets/the-boots-wuhan.webp'], focal: '50% 42%', focus: ['Dining Space'] },
       { title: 'Modern Italian Residence 鐠?Wuhan Tianchen', meta: '148 sqm / flat residence / modern Italian style', year: '2023', visual: 'spaceRetail', image: '/assets/huarun-tianchen-italian.webp', gallery: ['/assets/huarun-tianchen-italian.webp'], focal: '50% 42%', focus: ['Residential Design'] },
       { title: 'Nanshan Club 鐠?Contemporary Business Space', meta: 'Club interior / business reception / contemporary restraint', year: '2023', visual: 'spaceGallery', image: '/assets/studio-bw.webp', gallery: ['/assets/studio-bw.webp'], focal: '50% 40%', focus: ['Club Space'] },
