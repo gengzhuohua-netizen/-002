@@ -32,13 +32,7 @@ const PHONE_DESKTOP_VIEWPORT = 'width=1440, viewport-fit=cover';
 function isPhoneLikeDevice() {
   if (typeof window === 'undefined') return false;
 
-  const coarsePointer = window.matchMedia('(pointer: coarse)').matches;
-  const narrowScreen = window.matchMedia('(max-width: 767px)').matches;
-  const touchCapable = navigator.maxTouchPoints > 0;
-  const userAgent = navigator.userAgent || '';
-  const phoneAgent = /Android.*Mobile|iPhone|iPod|Windows Phone|Mobile/i.test(userAgent);
-
-  return (phoneAgent || (coarsePointer && narrowScreen)) && touchCapable;
+  return window.matchMedia('(max-width: 767px)').matches;
 }
 
 function DeviceViewportManager() {
@@ -57,7 +51,6 @@ function DeviceViewportManager() {
 
     const mediaQueries = [
       window.matchMedia('(max-width: 767px)'),
-      window.matchMedia('(pointer: coarse)'),
     ];
 
     mediaQueries.forEach((query) => {
